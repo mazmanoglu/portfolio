@@ -11,7 +11,7 @@ function LeftSide() {
       <img className="leftSideBanner" src={banner} alt="banner" />
       <div className="leftSideBar">
         <Link to="/">
-         {/*  <img src={profilePhoto} alt="profile" className="circlePhoto" /> */}
+         <img src={profilePhoto} alt="profile" className="circlePhoto" /> 
         </Link>
         <div>
           <ul className="navbar-nav">

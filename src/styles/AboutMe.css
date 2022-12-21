@@ -1,3 +1,26 @@
+.outerSide{
+position: relative;
+display: flex;
+}
+
+.rightSide {
+  left: calc(200px + 4vw);
+  width: 84vw;
+  position: absolute; 
+  height:100vh;
+}
+
+.rightSideBanner {
+  width: 100%;
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0,
+        0, 0, 0));
+  z-index: -999;
+}
+
+.titleContainer{
+margin-left: 5vw;
+  margin-top: 16vh;
+}
 
 .nameTitle {
   color: black;
@@ -5,17 +28,13 @@
   font-family: 'Saira Extra Condensed';
   font-style: normal;
   font-weight: 700;
-  font-size: 130px;
+  font-size: calc(38px + 4vw);
 }
 
 .brown {
   color: #bd5d38;
 }
 
-.titleContainer {
-margin-top: 00px;
-margin-left: 325px;
-}
 
 .hometext {
   width: calc(90vw - 280px);
@@ -46,5 +65,5 @@ margin-left: 325px;
   justify-content: center;
   font-size: 30px;
   height: 50px;
-    transition: 0.8s all;
+  transition: 0.8s all;
 }
