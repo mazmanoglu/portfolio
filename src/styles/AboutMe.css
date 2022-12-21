@@ -1,0 +1,50 @@
+
+.nameTitle {
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Saira Extra Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 130px;
+}
+
+.brown {
+  color: #bd5d38;
+}
+
+.titleContainer {
+margin-top: 00px;
+margin-left: 325px;
+}
+
+.hometext {
+  width: calc(90vw - 280px);
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.social-icons {
+  width: calc(50vw - 280px);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.social-icon:hover {
+  background-color: #e87345;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.social-icon {
+  color: white;
+  background: rgba(0, 0, 0, 0.621);
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  height: 50px;
+    transition: 0.8s all;
+}

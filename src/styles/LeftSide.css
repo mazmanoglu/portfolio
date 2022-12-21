@@ -1,0 +1,14 @@
+.leftSide {
+    width: 280px;
+    height: 100vh;
+    z-index: 1;
+}
+
+.leftSideBanner {
+    width: 280px;
+    height: 100vh;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0,
+                0, 0, 0));
+    z-index: -999;
+
+}
