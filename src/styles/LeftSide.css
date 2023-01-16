@@ -1,38 +1,36 @@
 .leftSide {
-    width: 16vw;
+    width: 20vw;
     min-width: 200px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
+    font-family: 'Saira Extra Condensed';
 }
 
 .leftSideBanner {
-    width: 16vw;
+    width: 20vw;
     min-width: 200px;
     height: 100vh;
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0,
-                0, 0, 0));
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     z-index: -999;
     position: absolute;
 }
 
 .leftSideBar {
     color: black;
-    font-weight: 700;
-    margin-left: 50px;
+    font-weight: 70;
+    margin-left: calc(18px + 4vw);;
     z-index: 1;
-
 }
 
 .circlePhoto {
-    width: calc(100px + 3vw);
-    height: calc(100px + 3vw);
-    border-radius: 50%;
-    border: 10px solid #bd5d38;
+    width: calc(100px + 5vw);
+    height: calc(100px + 5vw);
+    border-radius: 60% 40% 36% 64% / 56% 59% 41% 44%;
+    border: 10px solid #2D033B;
     z-index: 1;
     margin-bottom: 40px;
-
 }
 
 .nav-link {
@@ -40,16 +38,147 @@
     text-decoration: none;
     line-height: 2;
     letter-spacing: 2.5px;
-    font-size: calc(8px + 1vw);
+    font-size: calc(18px + 1vw);
     text-shadow: .1em .1em 0 hsl(200 50% 30%);
-    font-family: 'Saira Extra Condensed';
     transition: all 0.8s;
 }
 
 .nav-link:hover {
-    color: #3C1651;
+    color: black;
+    text-shadow: none;
 }
 
 .nav-item {
     list-style: none;
 }
+
+
+/* 
+button {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 5px;
+    transition: 0.5s;
+    position: relative;
+    font-weight: 700;
+    font-size: 27px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    
+}
+
+button:hover {
+    letter-spacing: 0.25em;
+    color: #7c0cbc;
+    box-shadow: 0 0 45px #7c0cbc;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+button i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+button i::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #7c0cbc;
+    width: 7px;
+    height: 4px;
+    top: -3.5px;
+    left: 80%;
+    background: transparent;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+button:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+button i::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #7c0cbc;
+    width: 7px;
+    height: 4px;
+    bottom: -3.5px;
+    left: 20%;
+    background: transparent;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+button:hover i::after {
+    width: 20px;
+    left: 80%;
+}  */
+
+button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    /* border: 1px solid #03045e; */
+    border: none;
+
+    background-color: transparent;
+
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+}
+
+button::before,
+button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(-25deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+button::before {
+    left: -10px;
+    background: #240046;
+}
+
+button::after {
+    right: -10px;
+    background: #5a189a;
+}
+
+button:hover::before,
+button:hover::after {
+    width: 58%;
+}
+
+button:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+}
+
+button span {
+    color: #03045e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+}
+

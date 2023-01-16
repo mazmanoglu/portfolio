@@ -1,69 +1,72 @@
-.outerSide{
-position: relative;
-display: flex;
+.outerSide {
+  position: relative;
+  display: flex;
+  font-family: 'Saira Extra Condensed';
+  letter-spacing: 2.5px;
 }
 
 .rightSide {
-  left: calc(200px + 4vw);
-  width: 84vw;
-  position: absolute; 
-  height:100vh;
+  left: calc(200px + 5vw);
+  max-width: 80vw;
+  position: absolute;
+  max-height: 100vh;
 }
 
-.rightSideBanner {
-  width: 100%;
-  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0,
-        0, 0, 0));
-  z-index: -999;
-}
-
-.titleContainer{
-margin-left: 5vw;
-  margin-top: 16vh;
+.titleContainer {
+  margin-left: 10vw;
+  margin-top: 15vh;
 }
 
 .nameTitle {
   color: black;
   text-transform: uppercase;
-  font-family: 'Saira Extra Condensed';
   font-style: normal;
   font-weight: 700;
-  font-size: calc(38px + 4vw);
+  font-size: calc(38px + 6vw);
 }
 
 .brown {
-  color: #bd5d38;
+  color: #810CA8;
 }
 
 
 .hometext {
-  width: calc(90vw - 280px);
+  width: calc(80vw - 280px);
   margin-top: 30px;
-  font-size: 18px;
+  font-size: calc(18px + 2vw);
+  height: 30vh;
+
 }
 
 .social-icons {
-  width: calc(50vw - 280px);
+  width: calc(40vw);
   display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+  justify-content: space-around;
 }
 
 .social-icon:hover {
-  background-color: #e87345;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #7c0cbc;
+  box-shadow: rgba(0, 0, 0, 0.924) 0px 5px 17px;
 }
 
 
 .social-icon {
   color: white;
   background: rgba(0, 0, 0, 0.621);
-  border-radius: 50%;
-  width: 50px;
+  border-radius: 60% 40% 36% 64% / 56% 59% 41% 44%;
+  width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  height: 50px;
+  height: 70px;
   transition: 0.8s all;
+}
+
+.headTitle {
+  font-size: calc(22px + 2vw);
+}
+
+.subTitle {
+  font-size: calc(18px + 3vw);
 }

@@ -10,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AboutMe />} />
+          <Route path="/" element={<AboutMe />} />
         </Routes>
       </BrowserRouter>
     </div>

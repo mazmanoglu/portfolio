@@ -11,24 +11,34 @@ function LeftSide() {
       <img className="leftSideBanner" src={banner} alt="banner" />
       <div className="leftSideBar">
         <Link to="/">
-         <img src={profilePhoto} alt="profile" className="circlePhoto" /> 
+          <img src={profilePhoto} alt="profile" className="circlePhoto" />
         </Link>
         <div>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#AboutMe">
+              {/*  <a className="nav-link" href="#AboutMe">
                 About Me
-              </a>
+              </a> */}
+              <button>
+                <span>About me</span>
+                <i></i>
+              </button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#Experience">
+              {/* <a className="nav-link" href="#Experience">
                 Experience
-              </a>
+              </a> */}
+              <button>
+                <span>Experience</span>
+              </button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#education">
+              {/* <a className="nav-link" href="#education">
                 Education
-              </a>
+              </a> */}
+              <button>
+                <span>Education</span>
+              </button>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#skills">

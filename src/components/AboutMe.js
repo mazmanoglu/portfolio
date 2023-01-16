@@ -1,40 +1,59 @@
 import React from "react";
 import "../styles/AboutMe.css";
 import LeftSide from "./LeftSide";
-import banner from "../img/bluerainbow.jpg";
+import Typewriter from "typewriter-effect";
+import GraphemeSplitter from "grapheme-splitter";
 
 function AboutMe() {
+  const stringSplitter = (string) => {
+    const splitter = new GraphemeSplitter();
+    return splitter.splitGraphemes(string);
+  };
   return (
     <div className="outerSide">
       <LeftSide />
       <div className="rightSide">
-        {/*         <img className="rightSideBanner" src={banner} alt="banner" />
-         */}
         <div className="titleContainer">
+          <div className="headTitle">
+            <span className="brown">Hello, </span>
+            My name is
+          </div>
           <h1 className="nameTitle">
-            Fatih{" "}
-            <span
-              className="nameTitle, 
-brown"
-            >
-              Ozer
-            </span>
+            Fatih
+            <span className="nameTitle, brown"> Ozer</span>
           </h1>
-          <h2>
-            <span className="brown">FullStack </span>
+          {/*  <h2>
+            a Fullstack
+            <span className="brown"> .Net </span>
             Developer
-          </h2>
+          </h2> */}
           <div className="hometext">
-            Gemotiveerde Full Stack ontwikkelaar met een sterke analytisch
-            denkvermogen, leergierig en ambitieus. Kennis van C# en ervaring met
-            React. Mijn vorige carrière als diplomaat heeft me geleerd te
-            luisteren, met aandacht voor details. Werkethiek en discipline vind
-            ik belangrijk. Het staat u vrij om dit te checken via mijn
-            instructeur Benedikt Lantsoght (0499 388 227). Ik sta open voor een
-            verkennend gesprek om u verder van mijn kwaliteiten te overtuigen.{" "}
-            <br />
-            <span className="brown">Onmiddellijk beschikbaar.</span> <br />
-            Rijbewijs B en eigen auto.
+            <Typewriter
+              options={{
+                loop: true,
+                stringSplitter,
+                autoStart: true,
+                cursor: "💻",
+                delay: 50,
+                deleteSpeed: 3,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("- highly motivated and detail-oriented.....")
+                  .pauseFor(1500)
+                  .deleteChars(44)
+                  .typeString("- strong problem-solving skills, ")
+                  .pauseFor(1500)
+                  .typeString("with passion for learning")
+                  .pauseFor(1500)
+                  .deleteChars(61)
+                  .typeString(
+                    '<text class="subTitle">Fullstack <span class="brown">.Net </span>Developer...</text>'
+                  )
+                  .pauseFor(2500)
+                  .start();
+              }}
+            />
           </div>
 
           <div className="social-icons">
