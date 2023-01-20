@@ -5,14 +5,17 @@ import Typewriter from "typewriter-effect";
 import GraphemeSplitter from "grapheme-splitter";
 
 function AboutMe() {
+
   const stringSplitter = (string) => {
     const splitter = new GraphemeSplitter();
     return splitter.splitGraphemes(string);
+    
   };
   return (
     <div className="outerSide">
       <LeftSide />
       <div className="rightSide">
+
         <div className="titleContainer">
           <div className="headTitle">
             <span className="brown">Hello, </span>
@@ -22,11 +25,6 @@ function AboutMe() {
             Fatih
             <span className="nameTitle, brown"> Ozer</span>
           </h1>
-          {/*  <h2>
-            a Fullstack
-            <span className="brown"> .Net </span>
-            Developer
-          </h2> */}
           <div className="hometext">
             <Typewriter
               options={{
@@ -39,12 +37,18 @@ function AboutMe() {
               }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("- highly motivated and detail-oriented.....")
+                  .typeString(
+                    "- highly <span class=brown>motivated</span> and detail-oriented....."
+                  )
                   .pauseFor(1500)
                   .deleteChars(44)
-                  .typeString("- strong problem-solving skills, ")
+                  .typeString(
+                    "- with strong <span class=brown>problem-solving</span> skills "
+                  )
                   .pauseFor(1500)
-                  .typeString("with passion for learning")
+                  .typeString(
+                    "and <span class=brown>passion</span> for learning"
+                  )
                   .pauseFor(1500)
                   .deleteChars(61)
                   .typeString(
@@ -58,7 +62,7 @@ function AboutMe() {
 
           <div className="social-icons">
             <a
-              className="social-icon"
+              className="social-icon mail"
               title="Mail to me"
               href="mailto:fatihozer246@gmail.com"
               target="_blank"
@@ -67,7 +71,7 @@ function AboutMe() {
               <i className="fa-solid fa-envelope"></i>
             </a>
             <a
-              className="social-icon"
+              className="social-icon linkedin"
               title="My LinkedIn"
               href="https://www.linkedin.com/in/
 fatih-ozer-475a9913a/"
@@ -77,7 +81,7 @@ fatih-ozer-475a9913a/"
               <i className="fab fa-linkedin-in"></i>
             </a>
             <a
-              className="social-icon"
+              className="social-icon github"
               title="My GitHub"
               href="https://github.com/mazmanoglu"
               target="_blank"
@@ -86,7 +90,7 @@ fatih-ozer-475a9913a/"
               <i className="fab fa-github"></i>
             </a>
             <a
-              className="social-icon"
+              className="social-icon whatsapp"
               title="Reach me via Whatsapp"
               href="https://wa.me/32492806376"
               target="_blank"
@@ -95,7 +99,7 @@ fatih-ozer-475a9913a/"
               <i className="fa-brands fa-whatsapp"></i>
             </a>
             <a
-              className="social-icon"
+              className="social-icon google"
               title="Home Sweet Home"
               href="https://goo.gl/maps/
 PDTEtdJUEMaX7R8VA"
