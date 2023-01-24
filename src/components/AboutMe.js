@@ -41,19 +41,19 @@ function AboutMe() {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    "- highly <span class=brown>motivated</span> and detail-oriented....."
+                    "- highly <span class=brown>motivated</span> and detail-oriented..."
                   )
                   .pauseFor(1500)
                   .deleteChars(44)
                   .typeString(
-                    "- with strong <span class=brown>problem-solving</span> skills "
+                    "- with strong <span class=brown>problem-solving</span> skills... "
                   )
                   .pauseFor(1500)
                   .typeString(
-                    "and <span class=brown>passion</span> for learning"
+                    "<br/> &emsp; &emsp; ...and <span class=brown>passion</span> for learning"
                   )
                   .pauseFor(1500)
-                  .deleteChars(61)
+                  .deleteChars(71)
                   .typeString(
                     '<text class="subTitle">Fullstack <span class="brown">.Net </span>Developer...</text>'
                   )

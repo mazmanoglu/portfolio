@@ -15,7 +15,8 @@
   --leftSideText: #240046;
   --leftSideTextAfter: #b48cd9;
   --animation-color: #1faf26;
-  --icon-background: rgba(0, 0, 0, 0.521);
+  --icon-background-light: rgba(0, 0, 0, 0.721);
+  --icon-background-dark: rgba(147, 147, 147, 0.521);
   --mask-image-1: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   --mask-image-2: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
@@ -33,7 +34,7 @@ body.light {
   --animation-color: var(--white);
   --image: url("./img/sidebar2.jpg");
   --mask-image: var(--mask-image-1);
-
+--icon-background: var(--icon-background-light);
 }
 
 body.dark {
@@ -42,4 +43,5 @@ body.dark {
   --animation-color: var(--white);
   --image: url("./img/rainbow2.jpg");
     --mask-image: var(--mask-image-1);
+    --icon-background: var(--icon-background-dark);
 }

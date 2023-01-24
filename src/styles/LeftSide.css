@@ -42,6 +42,7 @@
     border: 10px solid var(--leftCircleBorder);
     z-index: 1;
     margin-bottom: 40px;
+    margin-left: 20px;
 }
 
 .nav-link {
@@ -74,7 +75,6 @@
     text-transform: uppercase;
     color: var(--text-color);
     padding: 0px;
-
 }
 
 /* this is the text, when you hover on button */
