@@ -9,16 +9,15 @@
   left: calc(200px + 5vw);
   max-width: 80vw;
   position: absolute;
-  max-height: 100vh;
+  height: 100vh;
 }
 
 .titleContainer {
-  margin-left: 10vw;
-  margin-top: 15vh;
+  margin-left: 5vw;
+  margin-top: 0vh;
 }
 
 .nameTitle {
-  color: black;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
@@ -42,7 +41,6 @@
   width: calc(40vw);
   display: flex;
   justify-content: space-around;
-
 }
 
 /* 
@@ -83,7 +81,7 @@
 
 .social-icon {
   color: white;
-  background: rgba(0, 0, 0, 0.521);
+  background: var(--icon-background);
   border-radius: 60% 40% 36% 64% / 56% 59% 41% 44%;
   width: 70px;
   display: flex;
@@ -93,6 +91,7 @@
   height: 70px;
   transform: rotate(1440deg);
   transition: 0.5s all ease;
+  
 }
 
 .headTitle {
@@ -101,4 +100,9 @@
 
 .subTitle {
   font-size: calc(18px + 3vw);
+}
+
+.darkmodebutton{
+text-align: right;
+margin-top: 20px ;
 }

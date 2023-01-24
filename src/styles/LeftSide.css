@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700&display=swap');
+
+* {
+    margin: 0;
+}
+
+
 .leftSide {
     width: 20vw;
     min-width: 200px;
     height: 100vh;
     position: fixed;
+    
     display: flex;
     align-items: center;
     font-family: 'Saira Extra Condensed';
@@ -13,35 +21,32 @@
     width: 20vw;
     min-width: 200px;
     height: 100vh;
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    /* mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+    mask-image: var(--mask-image);
     z-index: -999;
     position: absolute;
+    background-image: var(--image);
+    background-size: 100% 100%;
 }
 
 .leftSideBar {
-    color: black;
     font-weight: 70;
-    margin-left: calc(18px + 3vw);
+    margin-left: calc(1px + 1vw);
     z-index: 1;
-
 }
 
 .circlePhoto {
     width: calc(100px + 5vw);
     height: calc(100px + 5vw);
     border-radius: 60% 40% 36% 64% / 56% 59% 41% 44%;
-    border: 10px solid #441c55;
+    border: 10px solid var(--leftCircleBorder);
     z-index: 1;
     margin-bottom: 40px;
 }
 
 .nav-link {
-    color: white;
-    text-decoration: none;
     line-height: 2;
-    letter-spacing: 2.5px;
     font-size: calc(18px + 1vw);
-    text-shadow: .1em .1em 0 hsl(200 50% 30%);
     transition: all 0.8s;
 }
 
@@ -61,13 +66,6 @@
     background: transparent;
     padding: 0;
     border: none;
-}
-
-/* button styling */
-.button {
-    --border-right: 0px;
-    --text-color: #240046;
-    --animation-color: #fefdff;
     letter-spacing: 3px;
     text-decoration: none;
     font-size: calc(18px + 1vw);
@@ -75,7 +73,8 @@
     position: relative;
     text-transform: uppercase;
     color: var(--text-color);
-    padding: 5px;
+    padding: 0px;
+
 }
 
 /* this is the text, when you hover on button */
@@ -86,18 +85,16 @@
     color: #e0aaff;
     width: 0%;
     inset: 0;
-    /* border-right: var(--border-right) solid var(--animation-color); */
+    /* border-right: 5px solid var(--animation-color); */
     overflow: hidden;
     transition: 0.5s;
     color: var(--animation-color);
-    padding: 5px;
-
+    padding: 0px;
 }
 
 /* hover */
 .button:hover .hover-text {
     width: 100%;
-    filter: drop-shadow(0 0 30px var(--text-color));
-    box-shadow: 0px 0px 45px var(--text-color);
-
+    filter: drop-shadow(0 0 30px var(--white));
+    box-shadow: 0px 0px 45px var(--leftSideText);
 }

@@ -1,20 +1,23 @@
 import React from "react";
 import "../styles/AboutMe.css";
 import LeftSide from "./LeftSide";
+import DarkMode from "./DarkMode";
 import Typewriter from "typewriter-effect";
 import GraphemeSplitter from "grapheme-splitter";
 
-function AboutMe() {
 
+function AboutMe() {
   const stringSplitter = (string) => {
     const splitter = new GraphemeSplitter();
     return splitter.splitGraphemes(string);
-    
   };
   return (
     <div className="outerSide">
       <LeftSide />
       <div className="rightSide">
+        <div className="darkmodebutton">
+          <DarkMode />
+        </div>
 
         <div className="titleContainer">
           <div className="headTitle">
@@ -23,7 +26,7 @@ function AboutMe() {
           </div>
           <h1 className="nameTitle">
             Fatih
-            <span className="nameTitle, brown"> Ozer</span>
+            <span className="brown"> Ozer</span>
           </h1>
           <div className="hometext">
             <Typewriter
